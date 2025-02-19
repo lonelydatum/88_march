@@ -1,0 +1,43 @@
+@import '../../../_common/styles/common.scss';
+
+#banner{
+ width: 300px;
+ height: 600px;
+ background-color: #00c849;
+}
+
+
+
+
+
+#olg{
+	width: 129px;
+	height: 89px;
+	@include pos(0, 526);
+	// opacity: .5 !important;
+}
+
+
+#legalBtn{	
+	@include pos(235, 5);	
+	width: 92px;
+	// opacity: 1;
+}
+
+
+
+
+#bars{
+	@include pos(0, 382);
+	.bar_7{
+		height: 80px !important;
+	}
+}
+
+#bars2{
+	@include pos(0, 136);
+	.bar_0{
+		height: 160px !important;
+		top:-140px;
+	}
+}
