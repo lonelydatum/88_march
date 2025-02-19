@@ -32,11 +32,8 @@ function stag(vh){
 
 
 function start_landscape(barOptions, vh={x:-size.w}){
-	let delay = 1
-	if(universalBanner.size==="320x50"){
-		delay = .2
-		// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
-	}
+	let delay = .2
+	
 	
 
 	const tl = init()	

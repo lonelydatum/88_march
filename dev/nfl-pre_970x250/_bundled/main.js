@@ -42,11 +42,7 @@ function stag(vh) {
 function start_landscape(barOptions) {
 	var vh = arguments.length <= 1 || arguments[1] === undefined ? { x: -size.w } : arguments[1];
 
-	var delay = 1;
-	if (universalBanner.size === "320x50") {
-		delay = .2;
-		// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
-	}
+	var delay = .2;
 
 	var tl = init();
 	tl.add("start");
