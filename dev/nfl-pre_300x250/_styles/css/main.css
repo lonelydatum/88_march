@@ -305,4 +305,9 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
+.t3 {
+  -webkit-filter: none;
+  filter: none;
+}
+
 /*# sourceMappingURL=main.css.map */

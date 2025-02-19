@@ -43,9 +43,9 @@ function start_landscape(barOptions) {
 	var vh = arguments.length <= 1 || arguments[1] === undefined ? { x: -size.w } : arguments[1];
 
 	var delay = 1;
-	if (universalBanner.size !== "320x50") {
-		delay = 0;
-		TweenLite.to(".halo", { duration: .1, opacity: 0, yoyo: true, repeat: 3, repeatDelay: .1 });
+	if (universalBanner.size === "320x50") {
+		delay = .2;
+		// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
 	}
 
 	var tl = init();
@@ -53,11 +53,12 @@ function start_landscape(barOptions) {
 	// const barTL = barOptions.verHor==="h" ? animate_bars_vertical(barOptions, false) : animate_bars_horizontal(barOptions)
 
 	// tl.add(barTL, "start")	
+	console.log(delay);
 
 	tl.add("start", delay);
 
 	tl.from('.t1', stag(vh), "start");
-	tl.from('.logos', { duration: .3, opacity: 0 }, "end+=.3");
+	// tl.from('.logos', {duration:.3, opacity:0}, "end+=.3");		
 	tl.to('.t1', { duration: .3, opacity: 0 }, "+=" + READ.t1);
 	tl.from('.t2', stag(vh));
 	tl.to('.t2', { duration: .3, opacity: 0 }, "+=" + READ.t2);
@@ -81,47 +82,46 @@ function start_landscape(barOptions) {
 	tl.add((0, _proline.olg)());
 }
 
-function bb(barOptions2) {
-	var vh = arguments.length <= 1 || arguments[1] === undefined ? { x: -size.w } : arguments[1];
+// function bb(barOptions2, vh={x:-size.w}){
 
-	TweenLite.to(".halo", { duration: .1, opacity: 0, yoyo: true, repeat: 3, repeatDelay: .1 });
+// 	// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
 
-	var tl = init();
+// 	const tl = init()	
 
-	tl.add("start", 1);
+// 	tl.add("start", 1)
 
-	tl.from('.t1', stag(vh), "start");
-	tl.from('.logos', { duration: .3, opacity: 0 }, "end+=.3");
-	tl.to('.t1', { duration: .3, opacity: 0 }, "+=" + READ.t1);
-	tl.from('.t2', stag(vh));
-	tl.to('.t2', { duration: .3, opacity: 0 }, "+=" + READ.t2);
+// 	tl.from('.t1', stag(vh), "start");	
+// 	tl.from('.logos', {duration:.3, opacity:0}, "end+=.3");		
+// 	tl.to('.t1', {duration:.3, opacity:0}, `+=${READ.t1}`);		
+// 	tl.from('.t2', stag(vh));	
+// 	tl.to('.t2', {duration:.3, opacity:0}, `+=${READ.t2}`);		
 
-	console.log(universalBanner.size);
-	if (universalBanner.size === "300x250") {
+// 	console.log(universalBanner.size);
+// 	if(universalBanner.size==="300x250"){
 
-		tl.add("bb");
-		tl.to(".bars", { duration: .5, y: 119 }, "bb");
-		tl.from(['.bar-bottom', '.bar-top'], { duration: .3, opacity: 0 }, "bb");
-	}
+// 		tl.add("bb")
+// 		tl.to(".bars", {duration:.5, y:119}, "bb")
+// 		tl.from(['.bar-bottom', '.bar-top'], {duration:.3, opacity:0}, "bb");		
+// 	}
 
-	tl.from('.t3', stag(vh));
+// 	tl.from('.t3', stag(vh));	
 
-	tl.from([".cta", ".legalBtn", ".playsmart"], { duration: .3, opacity: 0 }, "+=.4");
+// 	tl.from([".cta", ".legalBtn", ".playsmart"], {duration:.3, opacity:0}, "+=.4")
 
-	tl.add((0, _proline.olg)());
-}
+// 	tl.add(olg())
+// }
 
 function start(barOptions2) {
 	var vh = arguments.length <= 1 || arguments[1] === undefined ? { x: -size.w } : arguments[1];
 
-	TweenLite.to(".halo", { duration: .1, opacity: 0, yoyo: true, repeat: 3, repeatDelay: .1 });
+	// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
 
 	var tl = init();
 
-	tl.add("start", 1);
+	tl.add("start", .25);
 
 	tl.from('.t1', stag(vh), "start");
-	tl.from('.logos', { duration: .3, opacity: 0 }, "end+=.3");
+	// tl.from('.logos', {duration:.3, opacity:0}, "end+=.3");		
 	tl.to('.t1', { duration: .3, opacity: 0 }, "+=" + READ.t1);
 	tl.from('.t2', stag(vh));
 	tl.to('.t2', { duration: .3, opacity: 0 }, "+=" + READ.t2);

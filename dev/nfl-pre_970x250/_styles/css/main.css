@@ -275,10 +275,6 @@ canvas, .text, .frame, .outline, img {
   height: 50px;
 }
 
-.t2 {
-  top: 52px;
-}
-
 #bars {
   -webkit-transform: translate(0px, 115px);
   -ms-transform: translate(0px, 115px);
