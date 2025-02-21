@@ -42,7 +42,7 @@ function start_landscape(barOptions, vh={x:-size.w}){
 	
 	
 	// tl.add(barTL, "start")	
-	console.log(delay);
+	// console.log(delay);
 
 	tl.add("start", delay)
 	
@@ -112,7 +112,7 @@ function start_landscape(barOptions, vh={x:-size.w}){
 // 	tl.add(olg())
 // }
 
-function start(barOptions2, vh={x:-size.w}){
+function start(vh={x:-size.w}){
 	
 	// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
 

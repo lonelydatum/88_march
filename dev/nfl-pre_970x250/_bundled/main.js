@@ -49,7 +49,7 @@ function start_landscape(barOptions) {
 	// const barTL = barOptions.verHor==="h" ? animate_bars_vertical(barOptions, false) : animate_bars_horizontal(barOptions)
 
 	// tl.add(barTL, "start")	
-	console.log(delay);
+	// console.log(delay);
 
 	tl.add("start", delay);
 
@@ -107,8 +107,8 @@ function start_landscape(barOptions) {
 // 	tl.add(olg())
 // }
 
-function start(barOptions2) {
-	var vh = arguments.length <= 1 || arguments[1] === undefined ? { x: -size.w } : arguments[1];
+function start() {
+	var vh = arguments.length <= 0 || arguments[0] === undefined ? { x: -size.w } : arguments[0];
 
 	// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
 
@@ -243,34 +243,59 @@ function olg() {
 exports.olg = olg;
 
 },{}],3:[function(require,module,exports){
-"use strict";
+'use strict';
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-var colors = ["d3ef35", "c4ec37", "b3ea38", "a2e739", "92e33a", "82e03c", "71de3d", "61da40", "52d641", "41d343", "30d144", "20ce46", "10ca46"];
+// const colors = [	
+// 	"d3ef35",
+// 	"c4ec37",
+// 	"b3ea38",
+// 	"a2e739",
+// 	"92e33a",
+// 	"82e03c",
+// 	"71de3d",
+// 	"61da40",	
+// 	"52d641",	
+// 	"41d343",	
+// 	"30d144",	
+// 	"20ce46",	
+// 	"10ca46"
+// 	]
 
-var barOptions = {
-	colors: ["00c748", "17cc46", "2ed145", "46d442", "5eda40", "76de3d", "8de23b", "a4e739", "bbeb37", "d3ef35"],
-	verHor: "h",
-	TOTAL: 10,
-	WIDTH: 109,
-	HEIGHT: 11,
-	GAP: -98,
-	id: "bars"
+// const barOptions  ={
+// 	colors:[
+// 	"00c748",
+// 	"17cc46",
+// 	"2ed145",
+// 	"46d442",
+// 	"5eda40",
+// 	"76de3d",
+// 	"8de23b",
+// 	"a4e739",
+// 	"bbeb37",
+// 	"d3ef35",	
+// 	],
+// 	verHor:"h",
+// 	TOTAL: 10,
+// 	WIDTH: 109,
+// 	HEIGHT: 11,
+// 	GAP: -98,
+// 	id:"bars",
 
-};
+// }
 
-var barOptions2 = {
-	colors: colors,
-	verHor: "v",
-	TOTAL: 11,
-	HEIGHT: 500,
-	GAP: 46,
-	WIDTH: 67,
-	id: "bars2"
-};
+// const barOptions2  ={
+// 	colors,
+// 	verHor:"v",
+// 	TOTAL: 11,
+// 	HEIGHT: 500,
+// 	GAP: 46,
+// 	WIDTH: 67,
+// 	id:"bars2"
+// }
 
-(0, _commonJsCommonJs.start)(barOptions, barOptions2, { y: 50 });
+(0, _commonJsCommonJs.start)({ y: 50 });
 
 module.exports = {};
 

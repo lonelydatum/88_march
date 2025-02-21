@@ -35,7 +35,7 @@ const barOptions2  ={
 }
 
 
-start_landscape(barOptions, barOptions2, {y:size.h})
+start_landscape({y:size.h})
 
 
 

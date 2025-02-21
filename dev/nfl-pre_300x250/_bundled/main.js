@@ -49,7 +49,7 @@ function start_landscape(barOptions) {
 	// const barTL = barOptions.verHor==="h" ? animate_bars_vertical(barOptions, false) : animate_bars_horizontal(barOptions)
 
 	// tl.add(barTL, "start")	
-	console.log(delay);
+	// console.log(delay);
 
 	tl.add("start", delay);
 
@@ -107,8 +107,8 @@ function start_landscape(barOptions) {
 // 	tl.add(olg())
 // }
 
-function start(barOptions2) {
-	var vh = arguments.length <= 1 || arguments[1] === undefined ? { x: -size.w } : arguments[1];
+function start() {
+	var vh = arguments.length <= 0 || arguments[0] === undefined ? { x: -size.w } : arguments[0];
 
 	// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
 
@@ -271,7 +271,7 @@ var barOptions2 = _extends({}, barOptions, {
 	id: "bars2"
 });
 
-(0, _commonJsCommonJs.start)(barOptions, barOptions2);
+(0, _commonJsCommonJs.start)();
 
 module.exports = {};
 

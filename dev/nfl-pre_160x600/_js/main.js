@@ -27,7 +27,7 @@ const barOptions2  ={
 	
 }
 
-start(barOptions2)
+start()
 	
 
 
