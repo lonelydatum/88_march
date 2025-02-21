@@ -140,77 +140,79 @@ function start(barOptions2) {
 	tl.add((0, _proline.olg)());
 }
 
-function animate_bars_horizontal(barOptions) {
-	var TOTAL = barOptions.TOTAL;
-	var WIDTH = barOptions.WIDTH;
-	var HEIGHT = barOptions.HEIGHT;
-	var GAP = barOptions.GAP;
-	var id = barOptions.id;
-	var colors = barOptions.colors;
-	var startColor = barOptions.startColor;
+// function animate_bars_horizontal(barOptions){
+// 	const {
+// 		TOTAL,
+// 		WIDTH,
+// 		HEIGHT,
+// 		GAP,
+// 		id,
+// 		colors,
+// 		startColor
+// 	} = barOptions 
+// 	const bars = document.getElementById(id)	
+// 	for(let i=0;i<TOTAL;i++){
+// 		const barItem = document.createElement("div")
+// 		const height = HEIGHT-(i * GAP)		
 
-	var bars = document.getElementById(id);
-	for (var i = 0; i < TOTAL; i++) {
-		var barItem = document.createElement("div");
-		var height = HEIGHT - i * GAP;
+// 		TweenLite.set(barItem, {
+// 			transformOrigin:"0% 100%",
+// 			className: `bar bar_${i}`,
+// 			width:WIDTH,
+// 			height, 
 
-		TweenLite.set(barItem, {
-			transformOrigin: "0% 100%",
-			className: "bar bar_" + i,
-			width: WIDTH,
-			height: height,
+// 			scale: 1,
+// 			x: WIDTH*i,
+// 			y: HEIGHT-height,
+// 			backgroundColor:`#${colors[i]}`
+// 		})
 
-			scale: 1,
-			x: WIDTH * i,
-			y: HEIGHT - height,
-			backgroundColor: "#" + colors[i]
-		});
+// 		bars.appendChild(barItem)
+// 	}
 
-		bars.appendChild(barItem);
-	}
+// 	const tl = new TimelineMax()
+// 	tl.from(`#${id} .bar`, {
+// 		scaleY: 0,
+// 		stagger: 0.06
+// 	});
+// 	return tl
+// }
 
-	var tl = new TimelineMax();
-	tl.from("#" + id + " .bar", {
-		scaleY: 0,
-		stagger: 0.06
-	});
-	return tl;
-}
+// function animate_bars_vertical(barOptions, animate=true){
+// 	const {
+// 		TOTAL,
+// 		WIDTH,
+// 		HEIGHT,
+// 		GAP,
+// 		id,
+// 		colors,
+// 	} = barOptions 
+// 	const bars = document.getElementById(id)	
+// 	for(let i=0;i<TOTAL;i++){
 
-function animate_bars_vertical(barOptions) {
-	var animate = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
-	var TOTAL = barOptions.TOTAL;
-	var WIDTH = barOptions.WIDTH;
-	var HEIGHT = barOptions.HEIGHT;
-	var GAP = barOptions.GAP;
-	var id = barOptions.id;
-	var colors = barOptions.colors;
+// 		const barItem = document.createElement("div")
+// 		TweenLite.set(barItem, {
+// 			className: `bar bar_${i}`,
+// 			height:HEIGHT,
+// 			width:WIDTH-(i * GAP), 
+// 			y:HEIGHT*i,
+// 			backgroundColor:`#${colors[i]}`
+// 		})
 
-	var bars = document.getElementById(id);
-	for (var i = 0; i < TOTAL; i++) {
+// 		bars.appendChild(barItem)
+// 	}
 
-		var barItem = document.createElement("div");
-		TweenLite.set(barItem, {
-			className: "bar bar_" + i,
-			height: HEIGHT,
-			width: WIDTH - i * GAP,
-			y: HEIGHT * i,
-			backgroundColor: "#" + colors[i]
-		});
+// 	const tl = new TimelineMax()
+// 	if(animate){
+// 		tl.from(`#${id} .bar`, {
+// 			width: 0,
+// 			stagger: 0.06
+// 		});	
+// 	}
 
-		bars.appendChild(barItem);
-	}
+// 	return tl
 
-	var tl = new TimelineMax();
-	if (animate) {
-		tl.from("#" + id + " .bar", {
-			width: 0,
-			stagger: 0.06
-		});
-	}
-
-	return tl;
-}
+// }
 
 exports.size = size;
 exports.init = init;
