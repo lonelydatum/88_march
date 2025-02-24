@@ -15,7 +15,7 @@ const READ_PRE = {
 }
 
 const READ_POST = {
-	t1: 1.3,
+	t1: 1.5,
 	t2: 1.5,
 	t3: 2.1,
 }
