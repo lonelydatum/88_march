@@ -1,25 +1,9 @@
 @import '../../../_common/styles/common.scss';
-
-#banner{
- width: 300px;
- height: 250px;
- 
-}
+@import '../../../_common/styles/size_300x250.scss';
 
 
 
-#legalBtn{	
-	@include pos(220, 0);	
-	width: 80px;
-	opacity: 0;
 
-}
-
-#olg{
-	width: 108px;
-	height: 69px;
-	@include pos(0, 193);
-}
 
 
 .bar-top{
@@ -35,11 +19,7 @@
 	width: 300px;
 	height: 131px;
 	background-color: #d3ef35;
-	@include pos(0, 250);
-}
-
-.bars{
-	// @include pos-scale(0, -131, .5);
+	@include pos(0, 245);
 }
 
 

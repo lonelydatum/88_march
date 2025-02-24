@@ -1,23 +1,6 @@
 @import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/size_160x600.scss';
 
-
-#banner{
- 	width: 160px;
- 	height: 600px;
- 	background-color: #00c849;
-}
-
-#olg{
-	width: 87px;
-	height: 49px;
-	@include pos(0, 555);
-}
-
-
-#legalBtn{	
-	@include pos(95, 4);	
-	width: 72px;	
-}
 
 
 #bars{

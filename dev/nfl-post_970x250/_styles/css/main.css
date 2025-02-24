@@ -252,9 +252,9 @@ canvas, .text, .frame, .outline, img {
 #olg {
   width: 158px;
   height: 81px;
-  -webkit-transform: translate(-2px, 169px);
-  -ms-transform: translate(-2px, 169px);
-  transform: translate(-2px, 169px);
+  -webkit-transform: translate(-2px, 178px);
+  -ms-transform: translate(-2px, 178px);
+  transform: translate(-2px, 178px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -304,24 +304,6 @@ canvas, .text, .frame, .outline, img {
 #bars2 .bar_0 {
   width: 342px !important;
   left: -275px;
-}
-
-.playa {
-  z-index: 11;
-  -webkit-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-}
-
-.cta {
-  -webkit-transform: translate(-9px, 0px) scale(0.5, 0.5);
-  -ms-transform: translate(-9px, 0px) scale(0.5, 0.5);
-  transform: translate(-9px, 0px) scale(0.5, 0.5);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */

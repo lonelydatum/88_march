@@ -86,35 +86,6 @@ function start_landscape(barOptions) {
 	tl.add((0, _proline.olg)());
 }
 
-// function bb(barOptions2, vh={x:-size.w}){
-
-// 	// TweenLite.to(".halo", {duration: .1, opacity:0, yoyo:true, repeat:3, repeatDelay:.1});
-
-// 	const tl = init()	
-
-// 	tl.add("start", 1)
-
-// 	tl.from('.t1', stag(vh), "start");	
-// 	tl.from('.logos', {duration:.3, opacity:0}, "end+=.3");		
-// 	tl.to('.t1', {duration:.3, opacity:0}, `+=${READ.t1}`);		
-// 	tl.from('.t2', stag(vh));	
-// 	tl.to('.t2', {duration:.3, opacity:0}, `+=${READ.t2}`);		
-
-// 	console.log(universalBanner.size);
-// 	if(universalBanner.size==="300x250"){
-
-// 		tl.add("bb")
-// 		tl.to(".bars", {duration:.5, y:119}, "bb")
-// 		tl.from(['.bar-bottom', '.bar-top'], {duration:.3, opacity:0}, "bb");		
-// 	}
-
-// 	tl.from('.t3', stag(vh));	
-
-// 	tl.from([".cta", ".legalBtn", ".playsmart"], {duration:.3, opacity:0}, "+=.4")
-
-// 	tl.add(olg())
-// }
-
 function start() {
 	var vh = arguments.length <= 0 || arguments[0] === undefined ? { x: -size.w } : arguments[0];
 
@@ -147,80 +118,6 @@ function start() {
 
 	tl.add((0, _proline.olg)());
 }
-
-// function animate_bars_horizontal(barOptions){
-// 	const {
-// 		TOTAL,
-// 		WIDTH,
-// 		HEIGHT,
-// 		GAP,
-// 		id,
-// 		colors,
-// 		startColor
-// 	} = barOptions 
-// 	const bars = document.getElementById(id)	
-// 	for(let i=0;i<TOTAL;i++){
-// 		const barItem = document.createElement("div")
-// 		const height = HEIGHT-(i * GAP)		
-
-// 		TweenLite.set(barItem, {
-// 			transformOrigin:"0% 100%",
-// 			className: `bar bar_${i}`,
-// 			width:WIDTH,
-// 			height, 
-
-// 			scale: 1,
-// 			x: WIDTH*i,
-// 			y: HEIGHT-height,
-// 			backgroundColor:`#${colors[i]}`
-// 		})
-
-// 		bars.appendChild(barItem)
-// 	}
-
-// 	const tl = new TimelineMax()
-// 	tl.from(`#${id} .bar`, {
-// 		scaleY: 0,
-// 		stagger: 0.06
-// 	});
-// 	return tl
-// }
-
-// function animate_bars_vertical(barOptions, animate=true){
-// 	const {
-// 		TOTAL,
-// 		WIDTH,
-// 		HEIGHT,
-// 		GAP,
-// 		id,
-// 		colors,
-// 	} = barOptions 
-// 	const bars = document.getElementById(id)	
-// 	for(let i=0;i<TOTAL;i++){
-
-// 		const barItem = document.createElement("div")
-// 		TweenLite.set(barItem, {
-// 			className: `bar bar_${i}`,
-// 			height:HEIGHT,
-// 			width:WIDTH-(i * GAP), 
-// 			y:HEIGHT*i,
-// 			backgroundColor:`#${colors[i]}`
-// 		})
-
-// 		bars.appendChild(barItem)
-// 	}
-
-// 	const tl = new TimelineMax()
-// 	if(animate){
-// 		tl.from(`#${id} .bar`, {
-// 			width: 0,
-// 			stagger: 0.06
-// 		});	
-// 	}
-
-// 	return tl
-
-// }
 
 exports.size = size;
 exports.init = init;

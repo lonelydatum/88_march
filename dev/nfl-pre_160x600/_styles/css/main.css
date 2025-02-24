@@ -247,15 +247,14 @@ canvas, .text, .frame, .outline, img {
 #banner {
   width: 160px;
   height: 600px;
-  background-color: #00c849;
 }
 
 #olg {
   width: 87px;
   height: 49px;
-  -webkit-transform: translate(0px, 555px);
-  -ms-transform: translate(0px, 555px);
-  transform: translate(0px, 555px);
+  -webkit-transform: translate(0px, 557px);
+  -ms-transform: translate(0px, 557px);
+  transform: translate(0px, 557px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

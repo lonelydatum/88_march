@@ -1,25 +1,9 @@
 @import '../../../_common/styles/common.scss';
-
-#banner{
- width: 300px;
- height: 250px;
- 
-}
+@import '../../../_common/styles/size_300x250.scss';
 
 
 
-#legalBtn{	
-	@include pos(220, 0);	
-	width: 80px;
-	opacity: 0;
 
-}
-
-#olg{
-	width: 108px;
-	height: 69px;
-	@include pos(0, 193);
-}
 
 
 .bar-top{
