@@ -8,11 +8,21 @@ gsap.defaults({
 
 const {w, h} = size
 
-const READ = {
+const READ_PRE = {
 	t1: 1.3,
 	t2: 1.5,
 	t3: 2.1,
 }
+
+const READ_POST = {
+	t1: 1.3,
+	t2: 1.5,
+	t3: 2.1,
+}
+
+const READ = (universalBanner.name==="nfl-post") ? READ_POST : READ_PRE
+
+
 
 function init(){	
 	const tl = new TimelineMax({onComplete:()=>{

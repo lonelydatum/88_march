@@ -1,0 +1,48 @@
+@import '../../../_common/styles/common.scss';
+
+#banner{
+ width: 970px;
+ height: 250px; 
+}
+
+
+#olg{
+	// border: 1px solid red;
+	width: 158px;
+	height: 81px;
+	@include pos(-2, 169);
+	// opacity: .5 !important;
+}
+
+
+#legalBtn{	
+	@include pos(888, 0);	
+	width: 140px;
+	height: 50px;
+	// opacity: 1 !important;
+}
+
+.t2{	
+	// top:52px;	
+}
+
+#bars{
+	@include pos(0, 115);
+	.bar_9{
+		height: 50px !important;
+	}
+}
+
+#bars2{
+	@include pos(43, -235);
+	.bar_0{
+		width: 342px !important;
+		left: -275px;
+	}
+}
+
+
+.playa{
+	z-index: 11;
+	transform-origin: 50% 100%;
+}
